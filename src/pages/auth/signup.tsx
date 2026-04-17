@@ -61,7 +61,7 @@ const Signup: React.FC = () => {
           >
             <div className="md:col-span-2 space-y-2">
               <label className="text-[11px] font-bold text-[#013A81] uppercase tracking-wider ml-1">
-                Church Name (Tenant)
+                Church Name
               </label>
               <input
                 disabled={signupHandler.isPending}
@@ -155,7 +155,7 @@ const Signup: React.FC = () => {
 
           <div className="mt-8 pt-6 border-t border-slate-100 text-center">
             <p className="text-sm text-slate-500">
-              Already have a tenant account?{" "}
+              Already have an account?{" "}
               <Link
                 to="/login"
                 className="text-[#013A81] font-bold hover:text-[#008B44] underline decoration-2 underline-offset-4 transition-all"

@@ -111,7 +111,7 @@ const Login: React.FC = () => {
                 to="/register"
                 className="text-[#008B44] font-bold hover:text-[#013A81] underline decoration-2 underline-offset-4 transition-all"
               >
-                Create Church Tenant
+                Create Account
               </Link>
             </p>
           </div>
