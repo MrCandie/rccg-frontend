@@ -13,6 +13,7 @@ interface Member {
   status: "Active" | "Inactive";
   address?: string;
   gender?: string;
+  category?: string;
 }
 
 const Dashboard: React.FC = () => {

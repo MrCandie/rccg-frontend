@@ -134,7 +134,7 @@ const AddMember: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               Membership Category
             </label>
             <select
-              readOnly={memberHandler.isPending}
+              disabled={memberHandler.isPending}
               className="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:ring-2 focus:ring-[#008B44] outline-none transition-all text-sm appearance-none bg-white"
               onChange={(e) =>
                 setFormData({ ...formData, category: e.target.value })

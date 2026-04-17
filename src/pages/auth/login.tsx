@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePost } from "../../hooks/usePost";
 import { API_URL } from "../../hooks/http";
@@ -21,7 +21,7 @@ const Login: React.FC = () => {
     },
   });
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const payload = { email, password };
     loginHandler.mutate(payload);

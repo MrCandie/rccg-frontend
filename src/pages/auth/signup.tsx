@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePost } from "../../hooks/usePost";
 import { API_URL } from "../../hooks/http";
@@ -26,7 +26,7 @@ const Signup: React.FC = () => {
     },
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     signupHandler.mutate({
       ...formData,

@@ -28,9 +28,9 @@ const ProtectedRoute = () => {
     unauth.includes(location.pathname) ||
     unauth.some((path) => location.pathname.startsWith(path) && path !== "/");
 
-  // if (!isAuthenticated && !isUnauthPath) {
-  //   return <Navigate to="/login" state={{ from: location }} replace />;
-  // }
+  if (!isAuthenticated && !isUnauthPath) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
 
   return <Outlet />;
 };
